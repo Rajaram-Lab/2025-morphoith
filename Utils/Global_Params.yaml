@@ -1,0 +1,58 @@
+DATA:
+ tma:
+  bigtma: '/project/bioinformatics/Rajaram_lab/shared/Morphological_Clone/Patches/Datasets/BiGTMA/'
+  bigtma_raw: '/project/bioinformatics/Rajaram_lab/shared/Morphological_Clone/Results_SR/UTSW_TMA/PatchData/No_Anno_FullyAuto_Curated/'
+  bigtma_folds: '/project/bioinformatics/Rajaram_lab/shared/Morphological_Clone/Patches/Datasets/BigTMA_Curated_Folds/'
+  tma2: '/project/bioinformatics/Rajaram_lab/shared/Morphological_Clone/Results_SR/Jim145/PatchData_ByExcel_SR/20X'
+ pilot:
+  cores_20x_224px: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Pilot_Patches/224px_20X_ForPaper/'
+ phylogenetic: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/R_Projects/PhylogeneticTrees/FOR_PAPER1/'
+METADATA:
+ pilot: '/project/shared/kapur_rajaram_no_phi/MetaData/GenomicsPilot/From Hua/Sample_annotation_batch_all_HZ_11232021-SR_v6_05252023_NO_PHI.xlsx'
+ tma2: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Paper1/TMA2_MetaData.csv'
+ mayo: '/project/shared/kapur_rajaram_no_phi/Publications/202112_CancerResearch_BAP1/Final_Data/bap1-gitlab-clean/intratumoral-heterogeneity-dl-paper/Data_Files/WSI/allSamples_UpdatedCV_BL.csv'
+ tcga:
+  grade: '/project/bioinformatics/Rajaram_lab/shared/ccRCC/Images/ccRcc_images/TCGA_FFPE/gradeAndStage.csv'
+  blacklist: '/project/shared/kapur_rajaram_no_phi/ProcessedData/VirtualIHC/TCGA_blacklist.csv'
+  clinical: '/project/bioinformatics/Rajaram_lab/shared/Personal/Xue/Survival_Analysis/TCGA_full_signature_data.csv'
+  mapping: '/project/bioinformatics/Rajaram_lab/shared/ccRCC/Images/ccRcc_images/TCGA_FFPE/FriendlyNamesMapping.csv'
+FEATURES:
+ main: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/SIMILARITY/FEATURES/'
+ morphoith: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/SIMILARITY/FEATURES/COMBINED_PATCH/BYOL_ViTb_TMA/'
+ uni: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/SIMILARITY/FEATURES/BARE_MODELS/ViTl_UNI/'
+TASKS:
+ retrieval_bigtma_fold0: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/SIMILARITY/TASKS/retrieval_tma/'
+FIGURES: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Paper1/Figures/'
+WEIGHTS:
+ morphoith: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/SIMILARITY/MODELS/COMBINED_PATCH/BYOL_ViTb_TMA/AllFolds/epoch0.pt'
+MASKS:
+ tissue_classifier: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/ADDITIONAL_MASKS/tissue_classifier/'
+ morphoith: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/SIMILARITY/FEATURES/COMBINED_PATCH/BYOL_ViTb_TMA/TESSELATION/'
+ uni: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/SIMILARITY/FEATURES/BARE_MODELS/ViTl_UNI/TESSELLATION/'
+ stardist: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/ADDITIONAL_MASKS/nuclei_masks'
+ markers:
+  pilot: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Pilot_SLinks/Paper1_MarkerDetection/artClf_grandQC_pilot_paper/'
+  tcga: '/project/bioinformatics/Rajaram_lab/shared/ccRCC/Images/ccRcc_images/TCGA_FFPE/artClf_grandQC/5x/mask_qc/'
+ annotations: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/ADDITIONAL_MASKS/pathologists_annotations'
+ annotations_samples: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Pilot_Annotations'
+ vasculature: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/ADDITIONAL_MASKS/vasculature_masks/'
+ bigtma: '/project/bioinformatics/Rajaram_lab/shared/Morphological_Clone/QuPath_Projects/BiGTMA_Qupath_Project/qptma/'
+ morphoith_mayo: '/project/bioinformatics/Rajaram_lab/shared/Personal/Satwik/2024_02_Raquib_R01/Mayo/MorphoSim/patchProfilesMSim_Dense.pkl'
+ clusters_mayo: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Paper1/Clusters_Mayo'
+ clusters_pilot_3patients: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Paper1/Clusters_Pilot_NoMarkers/'
+ clusters_tcga: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Paper1/Clusters_TCGA'
+ clusters_mayo_uni: '/project/bioinformatics/Rajaram_lab/shared/Personal/Aleks/Paper1/Clusters_Mayo_UNI'
+SLIDES:
+ mayo: '/project/shared/kapur_rajaram_no_phi/Publications/202112_CancerResearch_BAP1/Final_Data/Raw_Slide_Images/WSI/'
+ cd31: '/project/bioinformatics/Rajaram_lab/shared/ccRCC/Images/ccRcc_images/IHC_Cell_Types/HnE/'
+ tcga: '/project/bioinformatics/Rajaram_lab/shared/ccRCC/Images/ccRcc_images/TCGA_FFPE/FriendlyNames'
+ pilot: '/project/shared/kapur_rajaram_no_phi/Data/GenomicsPilot/Images/'
+ bigtma: '/project/bioinformatics/Rajaram_lab/shared/ccRCC/Images/ccRcc_images/TMA_Data_Sets/RCC/Full_Set/'
+ tma2: '/project/bioinformatics/Rajaram_lab/shared/ccRCC/Images/ccRcc_images/TMA_Data_Sets/Jim145/HnE_20X/'
+DATASETS:
+ tcga: 'Utils/Datasets/tcga.csv'
+ pilot: 'Utils/Datasets/pilot.csv'
+ cd31: 'Utils/Datasets/cd31.csv'
+ mayo: 'Utils/Datasets/mayo.csv'
+VISUALIZATION:
+ slides: 'Utils/Slides_To_Visualize.csv'

@@ -1,0 +1,26 @@
+Name,Reason,Dataset
+19097,Mutations,bap1
+19390,Mutations,setd2
+19462,Mutations,pbrm1
+TCGA_FFPE_068,Tissues,tcga
+TCGA_FFPE_052,Tissues,tcga
+KC02000-T1-B12-Flip,Annotations,
+10773,Handcrafted,
+TCGA_FFPE_116,Separation,tcga
+TCGA_FFPE_202,Separation,tcga
+18625,Sampling,bap1
+19097,Mutations tsne,bap1
+18625,Overlap,bap1
+18625,Clusters,bap1
+19366,Clusters,bap1
+20304,Clusters,bap1
+20307,Mutations,setd2
+18709,Mutations,setd2
+TCGA_FFPE_043,Separation,tcga
+TCGA_FFPE_222,Negative control,tcga
+19390,Heterogeneity,bap1
+TCGA_FFPE_432,Separation,tcga
+TCGA_FFPE_013,Separation,tcga
+TCGA_FFPE_322,Separation,tcga
+TCGA_FFPE_360,Separation,tcga
+19369,Mutations,bap1
